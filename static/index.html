@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>MindCheck — Wellness Check-In</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="app-header">
+      <div class="brand">
+        <span class="brand-dot"></span>
+        <h1>MindCheck</h1>
+      </div>
+      <p class="tagline">A gentle daily check-in. Not a substitute for professional care.</p>
+    </header>
+
+    <main class="chat-window" id="chat-window" aria-live="polite">
+      <div class="msg assistant">
+        <div class="bubble">
+          Hi, I'm MindCheck. This is a space to check in with yourself for a
+          minute. How are you feeling today?
+        </div>
+      </div>
+    </main>
+
+    <form class="composer" id="composer">
+      <textarea
+        id="user-input"
+        placeholder="Share how you're doing…"
+        rows="1"
+        maxlength="4000"
+        required
+      ></textarea>
+      <button type="submit" id="send-btn" aria-label="Send">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+          <path d="M4 12L20 4L13 20L11 13L4 12Z" fill="currentColor"/>
+        </svg>
+      </button>
+    </form>
+
+    <footer class="disclaimer">
+      MindCheck offers general wellness support, not therapy, diagnosis, or
+      medical advice. If you're in crisis, contact your local emergency
+      number, or in the US call/text <strong>988</strong> (Suicide &amp;
+      Crisis Lifeline).
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
